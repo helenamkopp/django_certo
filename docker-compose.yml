@@ -1,0 +1,13 @@
+version: "3.8"
+services: 
+    ts_app_web:
+        image: postgres:latest
+        ports: 
+            - "5432:5432"
+        expose: 
+            - "5432"
+        environment: 
+            POSTGRES_USER: olist_ts
+            POSTGRES_PASSWORD: olist_ts
+            POSTGRES_NAME: olist_ts
+        container_name: ts_postgres
